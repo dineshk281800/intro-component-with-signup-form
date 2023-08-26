@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: var(--Red);
+  background-position: center;
+  width: 100%;
+  /* min-height: 100vh; */
+  /* padding: 10rem 0; */
+}
+
+:root {
+  /* primary */
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 38% 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  padding: 3rem;
+}
+.topic {
+  color: #fff;
+  font-size: 4.2rem;
+  line-height: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.content {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.signup-box {
+  padding: 1rem;
+}
+
+.plan {
+  background-color: var(--Blue);
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.6rem;
+  width: 100%;
+  margin-bottom: 1.7rem;
+  border-radius: 1rem;
+  /* box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 7px 10px 0px #c94545;
+}
+
+.trial {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.form-box {
+  padding: 3.5rem;
+  width: 100%;
+  height: 49rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 7px 10px 0px #ce4646;
+}
+
+.fields {
+  position: relative;
+  height: auto;
+}
+
+.dimension {
+  width: 100%;
+  height: 5rem;
+  outline: none;
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 3px;
+  padding: 1rem 3rem;
+  margin-bottom: 3.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+}
+
+.dimension:focus {
+  border: 1px solid var(--Blue);
+  color: var(--Blue);
+}
+
+.btn {
+  background-color: var(--Green);
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.btn:hover {
+  background-color: hsl(154, 76%, 67%);
+}
+
+.footer-msg {
+  text-align: center;
+  color: var(--Grayish-Blue);
+  font-size: 1.2rem;
+}
+
+.terms {
+  color: var(--Red);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.error-icon {
+  /* display: none; */
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+}
+
+.error-msg {
+  position: absolute;
+  right: 0rem;
+  top: 5.5rem;
+  color: var(--Red);
+  font-size: 1.1rem;
+}
