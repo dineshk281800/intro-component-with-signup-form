@@ -33,30 +33,38 @@
             <div class="fields">
               <input
                 type="text"
-                class="firstName dimension"
+                class="fname name dimension"
                 id="fname"
                 placeholder="First Name"
+                required
+                onblur="firstName()"
               />
               <img
                 src="images/icon-error.svg"
                 alt="error-img"
                 class="error-icon"
+                id="first-icon"
               />
-              <p class="error-msg">First Name can't be empty</p>
+              <p class="error-msg" id="first-msg"></p>
+              <!-- First Name can't be empty -->
             </div>
             <div class="fields">
               <input
                 type="text"
-                class="lastName dimension"
+                class="lname name dimension"
                 id="lname"
                 placeholder="Last Name"
+                required
+                onblur="lastName()"
               />
               <img
                 src="images/icon-error.svg"
                 alt="error-img"
                 class="error-icon"
+                id="last-icon"
               />
-              <p class="error-msg">Last Name can't be empty</p>
+              <p class="error-msg" id="last-msg"></p>
+              <!-- Last Name can't be empty -->
             </div>
             <div class="fields">
               <input
@@ -64,15 +72,17 @@
                 class="email dimension"
                 id="email"
                 placeholder="Email Address"
+                required
+                onblur="validateEmail()"
               />
               <img
                 src="images/icon-error.svg"
                 alt="error-img"
                 class="error-icon"
+                id="error-icon"
               />
-              <p class="error-msg" id="error-msg">
-                Looks like this is not an empty
-              </p>
+              <p class="error-msg" id="error-msg"></p>
+              <!-- Looks like this is not an empty -->
             </div>
             <div class="fields">
               <input
@@ -80,13 +90,17 @@
                 class="password dimension"
                 id="password"
                 placeholder="Password"
+                required
+                onblur="validatePassword()"
               />
               <img
                 src="images/icon-error.svg"
                 alt="error-img"
                 class="error-icon"
+                id="password-icon"
               />
-              <p class="error-msg">Password can't be empty</p>
+              <p class="error-msg" id="password-msg"></p>
+              <!-- Password can't be empty -->
             </div>
             <button type="submit" class="btn dimension">
               CLAIM YOUR FREE TRIAL
@@ -99,6 +113,6 @@
         </div>
       </div>
     </div>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>
